@@ -49,7 +49,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -189,6 +189,8 @@ exec_always --no-startup-id picom -f
 exec_always --no-startup-id feh --bg-scale --zoom fill ~/Downloads/bg.jpeg
 exec_always --no-startup-id xfce4-clipman
 exec_always --no-startup-id unclutter
+exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
 
 bar {
   mode hide
