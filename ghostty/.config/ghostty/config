@@ -1,2 +1,61 @@
-background-opacity = 0.8
+### SIGMA SLAURITS CONFIG ###
+
+# Theme & Background
+theme = abernathy
+background-opacity = 0.75
 background-blur-radius = 20
+
+# Font
+font-family = "MesloLGS NF"
+font-size = 20
+
+# Mouse & Scrolling
+mouse-hide-while-typing = true
+scrollback-limit = 10000
+
+# Automatic Update
+auto-update = check
+
+# Style of Titlebar - MacOS specific
+macos-titlebar-style = transparent
+
+# Window Settings
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+
+# Custom Keybinds
+# global means overrides all other apps
+# # Example) keybind = global:toggle_quick_terminal
+# alt = ⌥ (option)
+
+# Userful Keybinds
+keybind = super+i=inspector:toggle
+keybind = global:cmd+enter=toggle_quick_terminal
+
+# Searching text
+keybind = super+f=write_scrollback_file:open
+
+# Vim mode Custom Keybinds (for splits)
+# # Unbind default keybinds
+keybind = super+alt+left=unbind
+keybind = super+alt+down=unbind
+keybind = super+alt+up=unbind
+keybind = super+alt+right=unbind
+# # Custom keybinds for navigation
+keybind = super+alt+h=goto_split:left
+keybind = super+alt+j=goto_split:down
+keybind = super+alt+k=goto_split:up
+keybind = super+alt+l=goto_split:right
+
+# Resize window
+# # Unbind default keybinds
+keybind = super+ctrl+left=unbind
+keybind = super+ctrl+down=unbind
+keybind = super+ctrl+up=unbind
+keybind = super+ctrl+right=unbind
+# # Custom keybinds for resizing window
+keybind = super+ctrl+h=resize_split:left,10
+keybind = super+ctrl+j=resize_split:down,10
+keybind = super+ctrl+k=resize_split:up,10
+keybind = super+ctrl+l=resize_split:right,10
