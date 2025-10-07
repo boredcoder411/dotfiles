@@ -20,8 +20,8 @@ auto-update = check
 macos-titlebar-style = transparent
 
 # Window Settings
-window-padding-x = 10
-window-padding-y = 10
+#window-padding-x = 10
+#window-padding-y = 10
 window-padding-balance = true
 
 # Custom Keybinds
